@@ -1,1 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>NIZAMABAD DISTRICT - KAMMARPALLY MANDAL</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#eef3f8;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#0b5394;
+padding:15px 25px;
+color:#fff;
+box-shadow:0 2px 8px rgba(0,0,0,.25);
+}
+
+.logo{
+width:70px;
+height:70px;
+object-fit:contain;
+}
+
+.title{
+text-align:center;
+flex:1;
+}
+
+.title h1{
+font-size:30px;
+margin-bottom:5px;
+}
+
+.title h2{
+font-size:18px;
+font-weight:normal;
+}
+
+.search-box{
+width:95%;
+max-width:800px;
+margin:20px auto;
+}
+
+.search-box input{
+width:100%;
+padding:14px;
+font-size:17px;
+border:1px solid #ccc;
+border-radius:10px;
+outline:none;
+}
+
+.search-box input:focus{
+border-color:#0b5394;
+}
+
+.container{
+width:95%;
+max-width:1100px;
+margin:auto;
+padding-bottom:40px;
+}
+
+.place{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#fff;
+padding:15px;
+margin-bottom:15px;
+border-radius:10px;
+box-shadow:0 2px 6px rgba(0,0,0,.15);
+transition:.3s;
+}
+
+.place:hover{
+transform:translateY(-3px);
+}
+
+.left{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.icon{
+width:55px;
+height:55px;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:50%;
+background:#dbeeff;
+font-size:28px;
+}
+
+.info h3{
+color:#0b5394;
+margin-bottom:5px;
+}
+
+.info p{
+color:#666;
+}
+
+.open-btn{
+background:#0b5394;
+color:#fff;
+padding:10px 18px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.open-btn:hover{
+background:#1565c0;
+}
+
+footer{
+background:#0b5394;
+color:#fff;
+text-align:center;
+padding:15px;
+margin-top:30px;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+gap:12px;
+}
+
+.logo{
+width:60px;
+height:60px;
+}
+
+.place{
+flex-direction:column;
+align-items:flex-start;
+gap:15px;
+}
+
+.open-btn{
+width:100%;
+text-align:center;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<img src="ou-logo.png" alt="OU Logo" class="logo">
+
+<div class="title">
+<h1>NIZAMABAD DISTRICT</h1>
+<h2>KAMMARPALLY MANDAL</h2>
+</div>
+
+<img src="otbi-logo.png" alt="OTBI Logo" class="logo">
+
+</header>
+
+<div class="search-box">
+<input
+type="text"
+id="search"
+placeholder="Search Place..."
+onkeyup="searchPlaces()">
+</div>
+
+<div class="container" id="places">
+  <!-- 1 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">💊</div>
+        <div class="info">
+            <h3>ND-KPY Bhavani Medical & General Stores</h3>
+            <p>Medical & General Store</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=18.83542,78.50948" target="_blank">Open Map</a>
+</div>
+
+<!-- 2 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🛕</div>
+        <div class="info">
+            <h3>ND-KPY Narasimha Swamy Temple</h3>
+            <p>Temple</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=18.83543,78.50974" target="_blank">Open Map</a>
+</div>
+
+<!-- 3 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🏟️</div>
+        <div class="info">
+            <h3>ND-KPY Indoor Badminton Stadium</h3>
+            <p>Stadium</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=18.84165,78.51258" target="_blank">Open Map</a>
+</div>
+
+<!-- 4 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🚌</div>
+        <div class="info">
+            <h3>ND-KPY RTC Bus Station</h3>
+            <p>Bus Station</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=18.83837,78.51185" target="_blank">Open Map</a>
+</div>
+
+<!-- 5 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🍷</div>
+        <div class="info">
+            <h3>ND-KPY Kanaka Durga Wines</h3>
+            <p>Wines Shop</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=18.83357,78.50746" target="_blank">Open Map</a>
+</div>
+
+<!-- 6 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🐠</div>
+        <div class="info">
+            <h3>ND-KPY Rajarajeshwari Aquarium</h3>
+            <p>Aquarium</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=18.83883,78.51081" target="_blank">Open Map</a>
+</div>
+
+<!-- 7 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🏍️</div>
+        <div class="info">
+            <h3>ND-KPY Ramesh Bike Mechanic</h3>
+            <p>Bike Mechanic</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=18.83871,78.51064" target="_blank">Open Map</a>
+</div>
+
+<!-- 8 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🏫</div>
+        <div class="info">
+            <h3>ND-KPY Horticulture Institute</h3>
+            <p>Institute</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=18.82041,78.50986" target="_blank">Open Map</a>
+</div>
+
+<!-- 9 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🏫</div>
+        <div class="info">
+            <h3>ND-KPY Misimi High School</h3>
+            <p>School</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=18.83531,78.51074" target="_blank">Open Map</a>
+</div>
+
+<!-- 10 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🏢</div>
+        <div class="info">
+            <h3>ND-KPY Padmashali Function Hall</h3>
+            <p>Function Hall</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=18.83873,78.50625" target="_blank">Open Map</a>
+</div>
+
+<!-- 11 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🍚</div>
+        <div class="info">
+            <h3>ND-KPY Ration Shop</h3>
+            <p>Ration Shop</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=18.83583,78.50919" target="_blank">Open Map</a>
+</div>
+
+<!-- 12 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">💍</div>
+        <div class="info">
+            <h3>ND-KPY Lakshmi Narasimha Jewellery</h3>
+            <p>Jewellery Shop</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=18.83663,78.51085" target="_blank">Open Map</a>
+</div>
+
+<!-- 13 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🔧</div>
+        <div class="info">
+            <h3>ND-KPY Narendhar Engineering Welding</h3>
+            <p>Welding Shop</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=18.83671,78.51072" target="_blank">Open Map</a>
+</div>
+  <!-- 14 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">📮</div>
+        <div class="info">
+            <h3>ND-KPY Sub Post Office</h3>
+            <p>Post Office</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=18.83663,78.51125" target="_blank">Open Map</a>
+</div>
+
+<!-- 15 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🧺</div>
+        <div class="info">
+            <h3>ND-KPY Ravi Dry Cleaning</h3>
+            <p>Dry Cleaning</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=18.83708,78.51141" target="_blank">Open Map</a>
+</div>
+
+<!-- 16 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🌾</div>
+        <div class="info">
+            <h3>ND-KPY Sai Rice Depot</h3>
+            <p>Rice Depot</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=18.83697,78.51127" target="_blank">Open Map</a>
+</div>
+
+<!-- 17 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">👕</div>
+        <div class="info">
+            <h3>ND-KPY Choice Men's Wear</h3>
+            <p>Clothing Shop</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=18.83724,78.51133" target="_blank">Open Map</a>
+</div>
+
+<!-- 18 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">⚡</div>
+        <div class="info">
+            <h3>ND-KPY Electric Sub Station</h3>
+            <p>Electricity Substation</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=18.82353,78.51011" target="_blank">Open Map</a>
+</div>
+
+<!-- 19 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🛒</div>
+        <div class="info">
+            <h3>ND-KPY Varalaxmi Kiranam & General Store</h3>
+            <p>General Store</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=18.83759,78.51168" target="_blank">Open Map</a>
+</div>
+
+<!-- 20 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">✂️</div>
+        <div class="info">
+            <h3>ND-KPY Vamshi Hair Saloon</h3>
+            <p>Hair Salon</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=18.83729,78.51164" target="_blank">Open Map</a>
+</div>
+
+<!-- 21 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🏫</div>
+        <div class="info">
+            <h3>ND-KPY ZPHS School</h3>
+            <p>School</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=18.83829,78.51154" target="_blank">Open Map</a>
+</div>
+
+<!-- 22 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🏏</div>
+        <div class="info">
+            <h3>ND-KPY Green Fields Cricket Club</h3>
+            <p>Cricket Club</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=18.84213,78.51259" target="_blank">Open Map</a>
+</div>
+
+<!-- 23 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🤝</div>
+        <div class="info">
+            <h3>ND-KPY KBA Association</h3>
+            <p>Association</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=18.83523,78.50903" target="_blank">Open Map</a>
+</div>
+
+<!-- 24 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🥐</div>
+        <div class="info">
+            <h3>ND-KPY Ganesh Bakery</h3>
+            <p>Bakery</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=18.83801,78.51232" target="_blank">Open Map</a>
+</div>
+
+<!-- 25 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🏗️</div>
+        <div class="info">
+            <h3>ND-Surya Steel & Cement</h3>
+            <p>Steel & Cement Shop</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=18.83485,78.50671" target="_blank">Open Map</a>
+</div>
+  </div>
+
+<footer>
+© 2026 NIZAMABAD DISTRICT - KAMMARPALLY MANDAL
+</footer>
+
+<script>
+
+function searchPlaces(){
+
+let input=document.getElementById("search").value.toLowerCase();
+
+let places=document.getElementsByClassName("place");
+
+for(let i=0;i<places.length;i++){
+
+let text=places[i].innerText.toLowerCase();
+
+places[i].style.display=text.includes(input)?"flex":"none";
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
